@@ -1,28 +1,14 @@
 body {
     
-    /* background: url(./IMAGE/albums.png )  center/cover;  */
+    background: url(./IMAGE/albums.jpg )  ; 
+
+    min-height: 100vh;
     
-    
-    background:linear-gradient(rgba(0, 0, 0, 0.984), rgb(18, 18, 18), rgba(0, 0, 0, 0.984));
 }
 
 
 
 
-.arrierePlan1{
-    background-image: url(./IMAGE/albums.jpeg )  ;
-    min-height: 100vh; 
-    opacity: 0.2;
-    position: static;
-}
-
-.arrierePlan2{
-    background-image: url(./IMAGE/albums.jpeg )  ;
-    min-height: 100vh; 
-    opacity: 0.2;
-    position: static;
-    margin-top: -20vh;
-}
 
 h1 {
     color: rgb(236, 234, 234);
@@ -46,7 +32,6 @@ h3 {
 
 .titrePrincipale {
     text-align: center;
-    margin-top: -80vh;
     color: #ffffff;
 }
 
@@ -64,7 +49,6 @@ h3 {
     text-align: center;
     align-items: center;
     margin-left: 30%;
-    margin-top: 55px;
 
     
     /* border: 3px solid  #70aa7976; */
@@ -73,16 +57,22 @@ h3 {
 .button-link {
     display: inline-block;
     padding: 0px 2%;
-    box-shadow: inset 0px 0px 20px 5px rgb(52, 52, 52);  
-    background-color: #323232;
-    border-radius: 30%;
-    width: 40%;
+    box-shadow:  inset 0px 0px 0px 3px rgb(255 255 255);  
+    background-color: #000000a6;
+    width: 20%;
     text-decoration: none;
-    
-    
+    margin-top: 10vh;
+    margin-left: 40%;
+    text-align: center;
+    align-items: center;
+
 }
 
-
+.texteButton {
+    color: rgb(236, 234, 234);
+    font-size: 4vh;
+    font-family: sans-serif;
+}
 
 
 
