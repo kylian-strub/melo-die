@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+}
+.logo img{
+    position:relative;
+    width: 105px;
+    margin-left: 85px;
+}
+.menu{
+    list-style: none;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 100%;
+
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 25px;
+}
+.menu ul li a {
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-family: "Ubuntu";
+}
+.menu ul li a:hover {
+    color: rgb(255, 251, 0);
+}
+.menu input {
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    margin-left: 25px;
+    width: 250px;
+}
+
+.bloc-info{
+    background-color: rgb(46, 45, 45);
+    height: auto;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.bloc-info h1{
+    padding-top: 20px;
+    margin-left: 7%;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans";
+    font-size: 40px;
+    padding-right: 95px;
+}
+.bloc-info p{
+    margin-left: 7%;
+    color: rgb(255, 255, 255);
+    font-family: "Gabarito";
+    line-height: 40px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#liste_deroulante{
+    left: 83.6%;
+    top: 43%;
+    position: absolute;
+    font-family: "IBM Plex Sans";
+    border: 2px solid rgb(0, 0, 0);
+}
+h4{
+    position: absolute;
+    font-size: 12px;
+    left: 84% ;
+    top: 46.5%;
+    font-family: "Gabarito";
+    color: rgb(0, 0, 0);
+}
+.Filtres h1{
+    font-size: 27px;
+    position: relative;
+    margin-top: 2%;
+    font-family: "IBM Plex Sans";
+    margin-left: 7%;
+    color: rgb(0, 0, 0);
+}
+.Filtres h2{
+    font-size: 13.2px;
+    position: relative;
+    margin-top: -1.4%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 13%;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.Filtres .types{
+    margin-left: 7%;
+    width: 200px;
+    margin-top: 1%;
+    position: relative;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.Filtres .types legend{
+    text-align: left;
+    font-size: 25px;
+    font-family: "Gabarito";
+    color: rgb(0, 0, 0);
+}
+.Filtres .types label {
+  font-family: "IBM Plex Sans";
+  color: rgb(0, 0, 0);
+}
+
+.Filtres .artistes{
+    margin-left: 7%;
+    width: 200px;
+    margin-top: 1%;
+    position: relative;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.Filtres .artistes legend{
+    text-align: left;
+    font-size: 25px;
+    font-family: "Gabarito";
+    color: rgb(0, 0, 0);
+}
+.Filtres .artistes label {
+  font-family: "IBM Plex Sans";
+  color: rgb(0, 0, 0);
+}
+
+.Filtres .certification{
+    margin-left: 7%;
+    width: 200px;
+    margin-top: 1%;
+    position: relative;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.Filtres .certification legend{
+    text-align: left;
+    font-size: 25px;
+    font-family: "Gabarito";
+    color: rgb(0, 0, 0);
+}
+.Filtres .certification label {
+  font-family: "IBM Plex Sans";
+  color: rgb(0, 0, 0);
+}
+
+
+.Articles{
+    margin-left: 25%;
+    margin-top: 6%;
+    display: flex;
+}
+.Albums{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -70.2%;
+}
+.Album img{
+    width:236px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+}
+.Album h1{
+    font-family: "IBM Plex Sans";
+    font-size: 25px;
+    max-width: 235px;
+    padding-left: 5px;
+    margin-top: 0%;
+    padding-top: 4px;
+    color: rgb(0, 0, 0);
+}
+.Album h2{
+    font-family: "Gabarito";
+    font-size: 20px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+}
+.Album h3{
+    font-family: "IBM Plex Sans";
+    font-size: 17px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+}
+.Description{
+    border: 1px solid rgb(0, 0, 0);
+    width: 236px;
+    margin-top: -5px;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+.Description:hover{
+    background-color: rgb(149, 149, 149);
+    width: 236px;
+    cursor: pointer;
+}
+.Album img:hover + .Description{
+    background-color: rgb(149, 149, 149);
+    width: 236px;
+    cursor: pointer;
+}
+button{
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: rgb(189, 183, 183);
+    padding: 15px 55px 15px 55px;
+    margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .menu {
+        width: 405px;
+    }
+
+    .logo img {
+        margin-left: 5%;
+    }
+
+    .menu ul {
+        margin-top: 10px;
+    }
+
+    .menu input {
+        width: 80%;
+    }
+
+    .bloc-info{
+        height: auto;
+        width: 405px;
+    }
+    .bloc-info h1{
+        font-size: auto;
+        text-align: center;
+        padding: 20px 40px 0 40px;
+        width: 375px;
+    }
+    .bloc-info p{
+        font-size: auto;
+        text-align: center;
+        padding: 10px 15px 20px 20px;
+        width: auto;
+    }
+    .Filtres h1{
+        margin-left: 13%;
+    }
+    .Filtres h2{
+        margin-top: 1.5%;
+        margin-left: 13.5%;
+        font-size: 10px;
+    }
+    #liste_deroulante{
+        top: 70%;
+        left: 63%;
+        width: 120px;
+    }
+    h4{
+        top: 75%;
+        left: 65%;
+        font-size: 10px;
+    }
+    .Filtres .types{
+        margin-top: 8%;
+        margin-left: 10%;
+        width: 325px;
+        text-align: center;
+    }
+    .Filtres .types legend{
+        text-align: center;
+    }
+
+    .Filtres .artistes{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 325px;
+        text-align: center;
+    }
+    .Filtres .artistes legend{
+        text-align: center;
+    }
+    .Filtres .certification{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 325px;
+        text-align: center;
+    }
+    .Filtres .certification legend{
+        text-align: center;
+    }
+
+    .Articles {
+        display: flex;
+        margin-left: 21%;
+        margin-top: 70%;
+    }
+    button {
+        margin-left: 13%;
+    }
+}
