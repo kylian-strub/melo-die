@@ -180,7 +180,7 @@
     <div class="Articles">
         <div class="Albums">
             <div class="Album">
-                <img src="Trap$tar3.jpg" alt="Trap$tar3">
+                <img src="IMAGE/Trap$tar3.jpg" alt="Trap$tar3">
                 <div class="Description">
                     <h1>Trap$tar 3</h1>
                     <h2>Leto</h2>
@@ -189,7 +189,7 @@
             </div>
 
             <div class="Album">
-                <img src="ADC.jpg" alt="ADC">
+                <img src="IMAGE/ADC.jpg" alt="ADC">
                 <div class="Description">
                     <h1>ADC</h1>
                     <h2>Freeze Corleone</h2>
@@ -198,7 +198,7 @@
             </div>
 
             <div class="Album">
-                <img src="NI.jpg" alt="NI">
+                <img src="IMAGE/NI.jpg" alt="NI">
                 <div class="Description">
                     <h1>NI</h1>
                     <h2>Ninho</h2>
@@ -207,7 +207,7 @@
             </div>
 
             <div class="Album">
-                <img src="C'est_quand_qu'il_s'éteint.jpg" alt="C'est quand qu'il s'éteint">
+                <img src="IMAGE/C'est_quand_qu'il_s'éteint.jpg" alt="C'est quand qu'il s'éteint">
                 <div class="Description">
                     <h1>C'est quand qu"il s'éteint</h1>
                     <h2>Jul</h2>
@@ -216,7 +216,7 @@
             </div>
 
             <div class="Album">
-                <img src="En_temps_reel.jpg" alt="En temps reel">
+                <img src="IMAGE/En_temps_reel.jpg" alt="En temps reel">
                 <div class="Description">
                     <h1>En temps reel</h1>
                     <h2>Naps</h2>
@@ -225,7 +225,7 @@
             </div>
 
             <div class="Album">
-                <img src="2069.jpg" alt="2069">
+                <img src="IMAGE/2069.jpg" alt="2069">
                 <div class="Description">
                     <h1>2069'</h1>
                     <h2>PLK</h2>
@@ -234,7 +234,7 @@
             </div>
 
             <div class="Album">
-                <img src="Carre.jpg" alt="Carré">
+                <img src="IMAGE/Carre.jpg" alt="Carré">
                 <div class="Description">
                     <h1>Carré</h1>
                     <h2>Werenoi</h2>
@@ -243,7 +243,7 @@
             </div>
 
             <div class="Album">
-                <img src="Omerta.jpg" alt="Omerta">
+                <img src="IMAGE/Omerta.jpg" alt="Omerta">
                 <div class="Description">
                     <h1>Omerta</h1>
                     <h2>Maes</h2>
@@ -252,7 +252,7 @@
             </div>
 
             <div class="Album">
-                <img src="Coeur_blanc.jpg" alt="Coeur blanc">
+                <img src="IMAGE/Coeur_blanc.jpg" alt="Coeur blanc">
                 <div class="Description">
                     <h1>Coeur blanc</h1>
                     <h2>Jul</h2>
@@ -261,7 +261,7 @@
             </div>
 
             <div class="Album">
-                <img src="Liens_du_100.jpg" alt="Lien du 100">
+                <img src="IMAGE/Liens_du_100.jpg" alt="Lien du 100">
                 <div class="Description">
                     <h1>Lien du 100</h1>
                     <h2>SDM</h2>
@@ -270,7 +270,7 @@
             </div>
 
             <div class="Album">
-                <img src="Mélo.jpg" alt="Mélo">
+                <img src="IMAGE/Mélo.jpg" alt="Mélo">
                 <div class="Description">
                     <h1>Mélo</h1>
                     <h2>Tiakola</h2>
@@ -279,7 +279,7 @@
             </div>
 
             <div class="Album">
-                <img src="KMT.jpg" alt="KMT">
+                <img src="IMAGE/KMT.jpg" alt="KMT">
                 <div class="Description">
                     <h1>KMT</h1>
                     <h2>Gazo</h2>
@@ -288,7 +288,7 @@
             </div>
 
             <div class="Album">
-                <img src="Jefe.jpg" alt="Jefe">
+                <img src="IMAGE/Jefe.jpg" alt="Jefe">
                 <div class="Description">
                     <h1>Jefe</h1>
                     <h2>Ninho</h2>
@@ -297,7 +297,7 @@
             </div>
 
             <div class="Album">
-                <img src="Le_monde_est_méchant.jpg" alt="Le monde est méchant">
+                <img src="IMAGE/Le_monde_est_méchant.jpg" alt="Le monde est méchant">
                 <div class="Description">
                     <h1>Le monde est méchant</h1>
                     <h2>Niska</h2>
@@ -306,7 +306,7 @@
             </div>
 
             <div class="Album">
-                <img src="Demain_ça_ira.jpg" alt="Demain ça ira">
+                <img src="IMAGE/Demain_ça_ira.jpg" alt="Demain ça ira">
                 <div class="Description">
                     <h1>Demain ça ira</h1>
                     <h2>Jul</h2>
@@ -315,7 +315,7 @@
             </div>
 
             <div class="Album">
-                <img src="Ocho.jpg" alt="Ocho">
+                <img src="IMAGE/Ocho.jpg" alt="Ocho">
                 <div class="Description">
                     <h1>Ocho</h1>
                     <h2>SDM</h2>
