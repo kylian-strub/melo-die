@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <img src="logo.png" alt="melo-die">
+        </div>
+        <ul>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">A Propos</a></li>
+        </ul>
+        <input type="text" placeholder="Rechercher...">
+    </nav>
+
+    <div class="bloc-info">
+        <h1>Boutique</h1>
+        <p>Explorez notre boutique de rap, un univers où chaque album est une histoire, chaque morceau une émotion. 
+        <br>
+        Plongez dans le rythme et trouvez votre son parmi les notes audacieuses qui définissent le hip-hop.</p>
+    </div>
+
+
+    <div class="Filtres">
+        <h1>Filtres</h1>
+        <h2>Enlever les filtres</h2>
+
+        <fieldset class="types">
+
+            <legend>Types</legend>
+      
+            <div>
+            <input type="checkbox" id="rap_fr" name="Rap français" />
+            <label for="rap_fr">CD Rap Français</label>
+            </div>
+      
+            <div>
+                <input type="checkbox" id="rap_us" name="Rap américain" />
+                <label for="rap_us">CD Rap Américain</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="vinyle_rap_fr" name="Vinyles rap français" />
+                <label for="vinyle_rap_fr">Vinyles Rap Français</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="vinyle_rap_us" name="Vinyles rap américain" />
+                <label for="vinyle_rap_us">Vinyles Rap Américain</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="artistes">
+            <legend>Artistes</legend>
+
+            <div>
+                <input type="checkbox" id="Booba" name="Booba" />
+                <label for="Booba">Booba</label>
+            </div>
+      
+            <div>
+                <input type="checkbox" id="Damso" name="Damso" />
+                <label for="Damso">Damso</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Freeze_corleone" name="Freeze Corleone" />
+                <label for="Freeze Corleone">Freeze Corleone</label>
+            </div>
+      
+            <div>
+                <input type="checkbox" id="Gazo" name="Gazo" />
+                <label for="Gazo">Gazo</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Jul" name="Jul" />
+                <label for="Jul">Jul</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Kaaris" name="Kaaris" />
+                <label for="Kaaris">Kaaris</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Maes" name="Maes" />
+                <label for="Maes">Maes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Naps" name="Naps" />
+                <label for="Naps">Naps</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="Ninho" name="Ninho" />
+                <label for="Ninho">Ninho</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="Niska" name="Niska" />
+              <label for="Niska">Niska</label>
+            </div>
+  
+            <div>
+              <input type="checkbox" id="PLK" name="PLK" />
+              <label for="PLK">PLK</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="PNL" name="PNL" />
+                <label for="PNL">PNL</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="SCH" name="SCH" />
+                <label for="SCH">SCH</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="SDM" name="SDM" />
+                <label for="SDM">SDM</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Tiakola" name="Tiakola" />
+                <label for="Tiakola">Tiakola</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Vald" name="Vald" />
+                <label for="Vald">Vald</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Werenoi" name="Werenoi" />
+                <label for="Werenoi">Werenoi</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="certification">
+
+            <legend>Certification</legend>
+  
+            <div>
+                <input type="checkbox" id="or" name="Disque d'or" />
+                <label for="Disque_d'or">Disque d'or</label>
+            </div>
+  
+            <div>
+                <input type="checkbox" id="platine" name="Disque de platine" />
+                <label for="Disque_de_platine">Disque de platine</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="diamant" name="Disque de diamant" />
+                <label for="Disque_de_diamant">Disque de diamant</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <select name="liste deroulante" id="liste_deroulante">
+        <option value="" hidden>Trier par</option>
+        <option value="populaire">Les plus populaires</option>
+        <option value="récents">Les plus récents</option>
+        <option value="anciens">Les plus anciens</option>
+        <option value="décroissant">Prix : décroissant</option>
+        <option value="croissant">Prix : croissant</option>
+    </select>
+
+    <h4>Affichage de 100 produits</h4>
+
+    <div class="Articles">
+        <div class="Albums">
+            <div class="Album">
+                <img src="Trap$tar3.jpg" alt="Trap$tar3">
+                <div class="Description">
+                    <h1>Trap$tar 3</h1>
+                    <h2>Leto</h2>
+                    <h3>12.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="ADC.jpg" alt="ADC">
+                <div class="Description">
+                    <h1>ADC</h1>
+                    <h2>Freeze Corleone</h2>
+                    <h3>15€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="NI.jpg" alt="NI">
+                <div class="Description">
+                    <h1>NI</h1>
+                    <h2>Ninho</h2>
+                    <h3>13.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="C'est_quand_qu'il_s'éteint.jpg" alt="C'est quand qu'il s'éteint">
+                <div class="Description">
+                    <h1>C'est quand qu"il s'éteint</h1>
+                    <h2>Jul</h2>
+                    <h3>11.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="En_temps_reel.jpg" alt="En temps reel">
+                <div class="Description">
+                    <h1>En temps reel</h1>
+                    <h2>Naps</h2>
+                    <h3>9.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="2069.jpg" alt="2069">
+                <div class="Description">
+                    <h1>2069'</h1>
+                    <h2>PLK</h2>
+                    <h3>12.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Carre.jpg" alt="Carré">
+                <div class="Description">
+                    <h1>Carré</h1>
+                    <h2>Werenoi</h2>
+                    <h3>9.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Omerta.jpg" alt="Omerta">
+                <div class="Description">
+                    <h1>Omerta</h1>
+                    <h2>Maes</h2>
+                    <h3>12.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Coeur_blanc.jpg" alt="Coeur blanc">
+                <div class="Description">
+                    <h1>Coeur blanc</h1>
+                    <h2>Jul</h2>
+                    <h3>11.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Liens_du_100.jpg" alt="Lien du 100">
+                <div class="Description">
+                    <h1>Lien du 100</h1>
+                    <h2>SDM</h2>
+                    <h3>12.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Mélo.jpg" alt="Mélo">
+                <div class="Description">
+                    <h1>Mélo</h1>
+                    <h2>Tiakola</h2>
+                    <h3>12.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="KMT.jpg" alt="KMT">
+                <div class="Description">
+                    <h1>KMT</h1>
+                    <h2>Gazo</h2>
+                    <h3>14.99€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Jefe.jpg" alt="Jefe">
+                <div class="Description">
+                    <h1>Jefe</h1>
+                    <h2>Ninho</h2>
+                    <h3>18€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Le_monde_est_méchant.jpg" alt="Le monde est méchant">
+                <div class="Description">
+                    <h1>Le monde est méchant</h1>
+                    <h2>Niska</h2>
+                    <h3>10€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Demain_ça_ira.jpg" alt="Demain ça ira">
+                <div class="Description">
+                    <h1>Demain ça ira</h1>
+                    <h2>Jul</h2>
+                    <h3>16€</h3>
+                </div>
+            </div>
+
+            <div class="Album">
+                <img src="Ocho.jpg" alt="Ocho">
+                <div class="Description">
+                    <h1>Ocho</h1>
+                    <h2>SDM</h2>
+                    <h3>10€</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button">Voir plus de produits</button>
+
+</body>
+</html>
