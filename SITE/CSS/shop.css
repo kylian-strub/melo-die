@@ -332,6 +332,8 @@ ul{
 @media (max-width: 768px){
     .hamburger{
         display:block
+	margin-left:50%;
+	margin-right: 25px
     }
     .menu input, .panier, .menu h1{
         display: none;
