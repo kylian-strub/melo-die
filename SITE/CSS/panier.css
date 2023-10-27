@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+
+h1 {
+    color: rgb(236, 234, 234);
+    font-size: 15vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
 .logo{
     font-size: 25px;
     font-family: "Ubuntu";
