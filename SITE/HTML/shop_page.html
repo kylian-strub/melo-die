@@ -1,59 +1,75 @@
-<!DOCTYPE html>
-<html lang="fr">
+!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/shop.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shop Page</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="logo">
-            <img src="logo.png" alt="melo-die">
-        </div>
-        <ul>
-            <li><a href="#">Boutique</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">A Propos</a></li>
-        </ul>
-        <input type="text" placeholder="Rechercher...">
-    </nav>
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">Melo-Die</a>
+            <ul class="nav-menu">
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Histoire</a></li>
+                <li><a href="#">A Propos</a></li>
+            </ul>
+            <input type="text" placeholder="Rechercher...">
+            <div class="panier">
+                <i class="fa fa-shopping-bag"></i>
+            </div>
+            <h1>Login</h1>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-    <div class="bloc-info">
+    <div class="bloc">
         <h1>Boutique</h1>
         <p>Explorez notre boutique de rap, un univers où chaque album est une histoire, chaque morceau une émotion. 
         <br>
         Plongez dans le rythme et trouvez votre son parmi les notes audacieuses qui définissent le hip-hop.</p>
+        </div>
+
+
+    <div class="haut-articles">
+        <div class="filtres">
+            <h1>Filtres</h1>
+            <h2>Enlever les filtres</h2>
+        </div>
+
+        <div class="liste">
+                <select id="liste_deroulante">
+                    <option value="" hidden>Trier par</option>
+                    <option value="populaire">Les plus populaires</option>
+                    <option value="récents">Les plus récents</option>
+                    <option value="anciens">Les plus anciens</option>
+                    <option value="décroissant">Prix : décroissant</option>
+                    <option value="croissant">Prix : croissant</option>
+                    </select>
+            <h3>Affichage de 100 produits</h3>
+        </div>
     </div>
 
-
-    <div class="Filtres">
-        <h1>Filtres</h1>
-        <h2>Enlever les filtres</h2>
-
-        <fieldset class="types">
-
-            <legend>Types</legend>
+    <div class="checklist">
+        <fieldset class="CD">
+            <legend>CD</legend>
       
             <div>
-            <input type="checkbox" id="rap_fr" name="Rap français" />
-            <label for="rap_fr">CD Rap Français</label>
+                <input type="checkbox" id="rap_fr" name="Rap français" />
+                <label for="rap_fr">Rap Français</label>
             </div>
       
             <div>
                 <input type="checkbox" id="rap_us" name="Rap américain" />
-                <label for="rap_us">CD Rap Américain</label>
+                <label for="rap_us">Rap Américain</label>
             </div>
 
-            <div>
-                <input type="checkbox" id="vinyle_rap_fr" name="Vinyles rap français" />
-                <label for="vinyle_rap_fr">Vinyles Rap Français</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="vinyle_rap_us" name="Vinyles rap américain" />
-                <label for="vinyle_rap_us">Vinyles Rap Américain</label>
-            </div>
         </fieldset>
 
         <fieldset class="artistes">
@@ -70,7 +86,7 @@
             </div>
 
             <div>
-                <input type="checkbox" id="Freeze_corleone" name="Freeze Corleone" />
+                <input type="checkbox" id="Freeze-Corleone" name="">
                 <label for="Freeze Corleone">Freeze Corleone</label>
             </div>
       
@@ -166,166 +182,201 @@
         </fieldset>
     </div>
 
-    <select name="liste deroulante" id="liste_deroulante">
-        <option value="" hidden>Trier par</option>
-        <option value="populaire">Les plus populaires</option>
-        <option value="récents">Les plus récents</option>
-        <option value="anciens">Les plus anciens</option>
-        <option value="décroissant">Prix : décroissant</option>
-        <option value="croissant">Prix : croissant</option>
-    </select>
-
-    <h4>Affichage de 100 produits</h4>
-
-    <div class="Articles">
-        <div class="Albums">
-            <div class="Album" href="trapstar3.html">
-                <img src="../../IMAGE/Trap$tar3.jpg" alt="Trap$tar3">
+    <div class="Albums">
+        <div class="Album">
+            <img src="../../IMAGE/Trap$tar3.jpg" alt="Trap$tar3">
                 <div class="Description">
                     <h1>Trap$tar 3</h1>
                     <h2>Leto</h2>
                     <h3>12.99€</h3>
-                </div>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/ADC.jpg" alt="ADC">
-                <div class="Description">
-                    <h1>ADC</h1>
-                    <h2>Freeze Corleone</h2>
-                    <h3>15€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/ADC.jpg" alt="ADC">
+            <div class="Description">
+                <h1>ADC</h1>
+                <h2>Freeze Corleone</h2>
+                <h3>15€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/NI.jpg" alt="NI">
-                <div class="Description">
-                    <h1>NI</h1>
-                    <h2>Ninho</h2>
-                    <h3>13.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/NI.jpg" alt="NI">
+            <div class="Description">
+                <h1>NI</h1>
+                <h2>Ninho</h2>
+                <h3>13.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/C'est_quand_qu'il_s'éteint.jpg" alt="C'est quand qu'il s'éteint">
-                <div class="Description">
-                    <h1>C'est quand qu"il s'éteint</h1>
-                    <h2>Jul</h2>
-                    <h3>11.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/C'est_quand_qu'il_s'éteint.jpg" alt="C'est quand qu'il s'éteint">
+            <div class="Description">
+                <h1>C'est quand qu"il s'éteint</h1>
+                <h2>Jul</h2>
+                <h3>11.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/En_temps_reel.jpg" alt="En temps reel">
-                <div class="Description">
-                    <h1>En temps reel</h1>
-                    <h2>Naps</h2>
-                    <h3>9.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/En_temps_reel.jpg" alt="En temps reel">
+            <div class="Description">
+                <h1>En temps reel</h1>
+                <h2>Naps</h2>
+                <h3>9.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/2069.jpg" alt="2069">
-                <div class="Description">
-                    <h1>2069'</h1>
-                    <h2>PLK</h2>
-                    <h3>12.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/2069.jpg" alt="2069">
+            <div class="Description">
+                <h1>2069'</h1>
+                <h2>PLK</h2>
+                <h3>12.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Carre.jpg" alt="Carré">
-                <div class="Description">
-                    <h1>Carré</h1>
-                    <h2>Werenoi</h2>
-                    <h3>9.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Carre.jpg" alt="Carré">
+            <div class="Description">
+                <h1>Carré</h1>
+                <h2>Werenoi</h2>
+                <h3>9.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Omerta.jpg" alt="Omerta">
-                <div class="Description">
-                    <h1>Omerta</h1>
-                    <h2>Maes</h2>
-                    <h3>12.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Omerta.jpg" alt="Omerta">
+            <div class="Description">
+                <h1>Omerta</h1>
+                <h2>Maes</h2>
+                <h3>12.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Coeur_blanc.jpg" alt="Coeur blanc">
-                <div class="Description">
-                    <h1>Coeur blanc</h1>
-                    <h2>Jul</h2>
-                    <h3>11.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Coeur_blanc.jpg" alt="Coeur blanc">
+            <div class="Description">
+                <h1>Coeur blanc</h1>
+                <h2>Jul</h2>
+                <h3>11.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Liens_du_100.jpg" alt="Lien du 100">
-                <div class="Description">
-                    <h1>Lien du 100</h1>
-                    <h2>SDM</h2>
-                    <h3>12.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Liens_du_100.jpg" alt="Lien du 100">
+            <div class="Description">
+                <h1>Lien du 100</h1>
+                <h2>SDM</h2>
+                <h3>12.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Mélo.jpg" alt="Mélo">
-                <div class="Description">
-                    <h1>Mélo</h1>
-                    <h2>Tiakola</h2>
-                    <h3>12.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Mélo.jpg" alt="Mélo">
+            <div class="Description">
+                <h1>Mélo</h1>
+                <h2>Tiakola</h2>
+                <h3>12.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/KMT.jpg" alt="KMT">
-                <div class="Description">
-                    <h1>KMT</h1>
-                    <h2>Gazo</h2>
-                    <h3>14.99€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/KMT.jpg" alt="KMT">
+            <div class="Description">
+                <h1>KMT</h1>
+                <h2>Gazo</h2>
+                <h3>14.99€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Jefe.jpg" alt="Jefe">
-                <div class="Description">
-                    <h1>Jefe</h1>
-                    <h2>Ninho</h2>
-                    <h3>18€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Jefe.jpg" alt="Jefe">
+            <div class="Description">
+                <h1>Jefe</h1>
+                <h2>Ninho</h2>
+                <h3>18€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Le_monde_est_méchant.jpg" alt="Le monde est méchant">
-                <div class="Description">
-                    <h1>Le monde est méchant</h1>
-                    <h2>Niska</h2>
-                    <h3>10€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Le_monde_est_méchant.jpg" alt="Le monde est méchant">
+            <div class="Description">
+                <h1>Le monde est méchant</h1>
+                <h2>Niska</h2>
+                <h3>10€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Demain_ça_ira.jpg" alt="Demain ça ira">
-                <div class="Description">
-                    <h1>Demain ça ira</h1>
-                    <h2>Jul</h2>
-                    <h3>16€</h3>
-                </div>
+        <div class="Album">
+            <img src="../../IMAGE/Demain_ça_ira.jpg" alt="Demain ça ira">
+            <div class="Description">
+                <h1>Demain ça ira</h1>
+                <h2>Jul</h2>
+                <h3>16€</h3>
             </div>
+        </div>
 
-            <div class="Album">
-                <img src="../../IMAGE/Ocho.jpg" alt="Ocho">
-                <div class="Description">
-                    <h1>Ocho</h1>
-                    <h2>SDM</h2>
-                    <h3>10€</h3>
+        <div class="Album">
+            <img src="../../IMAGE/Ocho.jpg" alt="Ocho">
+            <div class="Description">
+                <h1>Ocho</h1>
+                <h2>SDM</h2>
+                <h3>10€</h3>
+            </div>
+        </div>
+        <button type="button">Voir plus de produits</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h1>Inscrivez-vous à notre newsletter</h1>
+                    <h2>Soyez le premier à être informé de nos offres spéciales, de nos lancements 
+                    <br>
+                    de nouveaux produits et de nos événements</h2>
+                    <form class="form-inline">
+                        <input class="formulaire" type="text" placeholder="adresse mail" aria-label="">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">connectez vous</button>
+                    </form>
+
+                    
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+   </footer>
 
-    <button type="button">Voir plus de produits</button>
+    <script src="menu-hamburger.js"></script>
 
 </body>
 </html>
