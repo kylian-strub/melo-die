@@ -282,4 +282,18 @@ ul{
 	text-decoration: none;
 	color: #bbbbbb;
 }
-
+@media(max-width: 768px){
+    .row{
+        display: block;
+    }
+    .footer-col{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .formulaire{
+        justify-content: center;
+    }
+    .colonnes{
+        justify-content: center;
+    }
+}
