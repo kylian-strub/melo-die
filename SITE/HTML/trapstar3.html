@@ -1,0 +1,172 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produit</title>
+        <link rel="icon" type="image/x-icon" href="Mélo-die (1).png">
+        <link rel="stylesheet" type="text/css" href="produit.css">
+    </head>
+    <body>
+        <header>
+            <h1>Votre Produit Incroyable</h1>
+        </header>
+        
+        
+        
+        
+    <section class="product-info">
+            
+            
+    <div class="product-image">
+                
+            
+    <img src="MILS_III.jpg" alt="Image du produit">
+            
+    </div>
+            
+            
+
+        
+    <div class="product-details">
+                <h2>M.I.L.S III</h2>
+                
+            
+    <p>Ce produit incroyable va révolutionner votre vie. Il a des caractéristiques incroyables et des avantages exceptionnels. Ne ratez pas cette opportunité unique d'améliorer votre quotidien.</p>
+                
+                
+    <p class="total-price">Prix Total : <span id="total-amount">18.00 €</span></p>
+    <div class="quantity">
+        <button class="decrement">-</button>
+        <input type="text" class ="quantity-input" id="quantity-input" value="1" min="1">
+        <button class="increment">+</button>
+    </div>
+    <br>
+    <button class="buy-button" data-name="M.I.L.S III" data-price="18.00" data-image="MILS_III.jpg">Acheter Maintenant</button>
+    </div>
+        
+
+    
+    </section>
+        
+        <section class="product-features">
+            
+            
+    <h2>Tracklist de l'album</h2>
+            <ul>
+                1.	Intro   2:43 <br>
+                2.	M.I.L.S 3	3:03 <br>
+                3.	Zipette	3:31 <br>
+                4.	Gros vendeurs	3:50 <br>
+                5.	Promo (feat. Damso)	3:29 <br>
+                6.	Mauvais Djo	3:38 <br>
+                7.	La puerta	4:06 <br>
+                8.	En chien	3:00 <br>
+                9.	Centre commercial (feat. Heuss l'Enfoiré)	4:02 <br>
+                10.	Tu sais qu'on est gang (feat. Hös Copperfield)	3:46 <br>
+                11.	C'était le rap	3:13 <br>
+                12.	Lettre à une femme	2:37 <br>
+                13.	Every day (feat. Griff)	3:10 <br>
+                14.	Le jeu (feat. Yaro)	3:22 <br>
+                15.	Bali	3:35 <br>
+                16.	Millésimes	3:42 <br>
+                17.	Filon	3:03
+            </ul>
+        
+        
+    </section>
+        
+        
+        
+    
+
+        
+    <section class="customer-reviews">
+            
+            
+    <h2>Avis des Clients</h2>
+            
+        
+    <div class="review">
+                <p>WoW, mais c'est quoi cet album de zinzin, completement chokar du truc je valide!</p>
+                
+            
+    <p class="reviewer">- Client Satisfait 1</p>
+            
+        
+    </div>
+            <div class="review">
+                <p>Cet album est le meilleur de tout le rap français, j'achète direct prenez mon argent.</p>
+                
+            
+    <p class="reviewer">- Client Satisfait 2</p>
+            </div>
+        
+    </section>
+        
+        <footer>
+    <p>&copy; 2023 Votre Société. Tous droits réservés.</p>
+        </footer>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const quantityInput = document.getElementById('quantity-input');
+                const incrementButton = document.querySelector('.increment');
+                const decrementButton = document.querySelector('.decrement');
+                const pricePerUnit = 18.00; // Prix par unité
+        
+                function updateTotalPrice() {
+                    const currentQuantity = parseInt(quantityInput.value);
+                    const totalAmount = pricePerUnit * currentQuantity;
+                    document.getElementById('total-amount').textContent = `${totalAmount.toFixed(2)} €`;
+                }
+        
+                incrementButton.addEventListener('click', function() {
+                    let currentQuantity = parseInt(quantityInput.value);
+                    quantityInput.value = currentQuantity + 1;
+                    updateTotalPrice();
+                });
+        
+                decrementButton.addEventListener('click', function() {
+                    let currentQuantity = parseInt(quantityInput.value);
+                    if (currentQuantity > 1) {
+                        quantityInput.value = currentQuantity - 1;
+                        updateTotalPrice();
+                    }
+                });
+        
+                quantityInput.addEventListener('input', updateTotalPrice);
+            });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Récupérer le bouton "Acheter" de la page de produit
+        const buyButton = document.querySelector('.buy-button');
+        const quantityInput = document.getElementById('quantity-input');
+
+        // Écouter le clic sur le bouton "Acheter"
+        buyButton.addEventListener('click', function() {
+            const productName = buyButton.getAttribute('data-name');
+            const productPrice = parseFloat(buyButton.getAttribute('data-price'));
+            const productImage = buyButton.getAttribute('data-image');
+            const productQuantity = parseInt(quantityInput.value);
+            addToCart(productName, productPrice, productImage, productQuantity);
+        });
+
+        // Fonction pour ajouter un produit au panier
+        function addToCart(name, price, image, quantity) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Ajouter le produit au panier
+            cart.push({ name, price, image, quantity });
+
+            // Mettre à jour le stockage local du navigateur avec les nouvelles données du panier
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Rediriger l'utilisateur vers la page du panier
+            window.location.href = 'panier.html';
+        }
+    });
+</script>
+    </body>
+    </html>
