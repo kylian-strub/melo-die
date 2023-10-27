@@ -220,4 +220,66 @@ button:hover{
     position: absolute;
       
 } 
+.container{
+	width: 100%;
+}
+.row{
+	display: flex;
+    flex: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 50px 0;
+}
+.footer-col{
+    margin-left: 7%;
+}
+.footer-col h1{
+    font-size: 25px;
+    font-family: "Ubuntu";
+    color: white;
+}
+.footer-col h2{
+    padding-top: 10px;
+    font-size: 10px;
+    font-family: "Ubuntu";
+    color: white;
+}
+.formulaire{
+    display: flex;
+}
+.formulaire .bloc-mail{
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+}
+.formulaire .connect{
+    margin-top: 10px;
+    width: 70px;
+    height: 35px;
+    border:none;
+    padding: 0 5px 0 5px; 
+    font-size: 12px; 
+    text-align: center; 
+}
+.colonnes{
+    display: flex;
+    margin-left: 7%;
+}
+.footer-col h4{
+	font-size: 17px;
+    font-family: "Ubuntu";
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+    font-family: "Gabarito";
+	color: #ffffff;
+	text-decoration: none;
+	color: #bbbbbb;
+}
 
