@@ -54,7 +54,7 @@ menu-hamburger.js
             localStorage.setItem('cart', JSON.stringify(cart));
 
             // Rediriger l'utilisateur vers la page du panier
-            window.location.href = 'panier.html';
+            window.location.href = '../panier.html';
         }
     });
 
