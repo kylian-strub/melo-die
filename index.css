@@ -209,12 +209,12 @@ button:hover{
 
 
 
-footer {
+.fin {
     background-color: black;
     height: auto;
     width: 100%;
     padding-top: 40px; 
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     text-align: center;
     align-items: center;
     position: absolute;
