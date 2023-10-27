@@ -1,25 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-body{
-    background-color: rgb(255, 255, 255);
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');    
+
 *{
     margin: 0;
-    padding: 0;
+    padding:0px;
     box-sizing: border-box;
 }
-h1{
-    font-family: "IBM Plex Sans";
-}
-h2{
-    font-family: "Gabarito";
-}
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
 
 
 .logo{
@@ -85,320 +72,152 @@ a{
     margin-right: 7%;
     font-family: "IBM Plex Sans";
 }
+body {
+    
+    background: url(./IMAGE/albums.jpg )  ; 
 
-
-
-
-
-.bloc{
-    background-color: rgb(0, 0, 0);
-    height: auto;
-    border-bottom: 1px solid white;
-    width: 100%;
-} 
-.bloc h1{
-    padding-top: 20px;
-    margin-left: 7%;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-}
-.bloc p{
-    margin-left: 7%;
-    color: rgb(255, 255, 255);
-    font-family: "Gabarito";
-    line-height: 40px;
-    font-size: 20px;
-    padding-bottom: 20px;
+    min-height: 100vh;
+    
 }
 
 
 
 
-.haut-articles{
-    display: flex;
-    justify-content: space-between;
+
+h1 {
+    color: rgb(236, 234, 234);
+    font-size: 15vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
-.filtres{
-    margin-top: 27.762px;
-    margin-left: 7%;
-    display: flex;
+h2 {
+    color: rgb(210, 210, 210);
+    font-size: 7vh;
+    font-family: sans-serif;
+
+
 }
-.filtres h2{
-    margin-top: 3%;
-    font-size: 15px;
-    padding: 10px 15px 0 15px;
-    text-decoration: underline;
+
+h3 {
+    color: rgb(236, 234, 234);
+    font-size: 5vh;
+    font-family: sans-serif;
 }
-.liste{
-    margin-right: 7%;
-    margin-top: 29px;
-}
-.liste #liste_deroulante{
-    height: 35px;
-    width: 150px;
-    border: 2px solid black
-}
-.liste h3{
-    margin-top: 10px;
-    font-size: 10px;
+
+.titrePrincipale {
     text-align: center;
+    color: #ffffff;
 }
 
-
-
-
-.checklist{
-    margin-left: 7%;
-    float: left;
-}
-.CD{
-    width: 200px;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 25px;
-}
-.CD legend{
-    font-size: 25px;
-    font-family: "Gabarito";
-    color: rgb(0, 0, 0);
-}
-.CD label {
-  font-family: "IBM Plex Sans";
-  color: rgb(0, 0, 0);
-}
-.artistes{
-    width: 200px;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 25px;
-}
-.artistes legend{
-    font-size: 25px;
-    font-family: "Gabarito";
-    color: rgb(0, 0, 0);
-}
-.artistes label {
-  font-family: "IBM Plex Sans";
-  color: rgb(0, 0, 0);
-}
-.certification{
-    width: 200px;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-}
-.certification legend{
-    font-size: 25px;
-    font-family: "Gabarito";
-    color: rgb(0, 0, 0);
-}
-.certification label {
-  font-family: "IBM Plex Sans";
-  color: rgb(0, 0, 0);
+.textePrincipale {
+    text-align: center;
+    color: #ffffff;
 }
 
+.video1 {
+    transform: rotate(270deg); 
+    width: 40%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px 1vh rgb(0 0 0);
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    margin-left: 30%;
 
+    margin-top: -10%;
+    /* border: 3px solid  #70aa7976; */
+}
 
+.button-link {
+    display: inline-block;
+    padding: 0px 2%;
+    box-shadow:  inset 0px 0px 0px 3px rgb(255 255 255);  
+    background-color: #000000a6;
+    width: 20%;
+    text-decoration: none;
+    margin-top: 10vh;
+    margin-left: 40%;
+    text-align: center;
+    align-items: center;
 
-.Albums{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 25%;
-    margin-right: 77.325px;
-    margin-top: 13px;
-    justify-content: center;
-} 
-.Album img{
-    width:240px;
-    margin-right: 20px;
-    cursor: pointer;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px 10px 0px 0px;
 }
-.Album h1{
-    font-family: "IBM Plex Sans";
-    font-size: 25px;
-    width: 240px;
-    padding: 5px 0 0 10px;
-    margin-top: 0%;
-    color: rgb(0, 0, 0);
-}
-.Album h2{
-    font-family: "Gabarito";
-    font-size: 22px;
-    padding-left: 10px;
-    color: rgb(0, 0, 0);
-}
-.Album h3{
-    font-family: "IBM Plex Sans";
-    font-size: 18px;
-    padding-left: 10px;
-    color: rgb(0, 0, 0);
-}
-.Description{
-    border: 1px solid rgb(0, 0, 0);
-    width: 240px;
-    margin-top: -5px;
-    height: 130px;
-    margin-bottom: 15px;
-    border-radius: 0px 0px 10px 10px;
-}
-.Description:hover{
-    background-color: rgb(149, 149, 149);
-    width: 240px;
-    cursor: pointer;
-}
-.Album img:hover + .Description{
-    background-color: rgb(149, 149, 149);
-    width: 240px;
-    cursor: pointer;
+
+.texteButton {
+    color: rgb(236, 234, 234);
+    font-size: 3vh;
+    font-family: sans-serif;
 }
 button{
-    border: 2px solid rgb(0, 0, 0); 
-    background-color: rgb(189, 183, 183);
-    padding: 15px 55px 15px 55px;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    font-size: 20px;
+    width: 30%;
+    padding:20px;
+    background-color: #0000007b;
+    color: white;
+    border: 3px solid white;
+    margin-top: 9vh;
+    margin-left: 35%;
+    transition: 0.3s;
 }
 button:hover{
-    background-color: rgb(137, 137, 137);
+    background-color: rgba(107, 107, 107, 0.701);
+    padding: 25px;
+    transition: 0.3s;
+    width: 32%;
+    margin-left: 34%;
+    margin-top: 8vh;
 }
 
 
 
-.container{
-	width: 100%;
-}
-.row{
-	display: flex;
-    flex: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #000000;
-    padding: 50px 0;
-}
-.footer-col{
-    margin-left: 7%;
-}
-.footer-col h1{
-    font-size: 25px;
-    font-family: "Ubuntu";
-    color: white;
-}
-.footer-col h2{
-    padding-top: 10px;
-    font-size: 10px;
-    font-family: "Ubuntu";
-    color: white;
-}
-.formulaire{
-    display: flex;
-}
-.formulaire .bloc-mail{
-    margin-top: 10px;
-    width: 300px;
-    height: 35px;
-}
-.formulaire .connect{
-    margin-top: 10px;
-    width: 70px;
-    height: 35px;
-    border:none;
-    padding: 0 5px 0 5px; 
-    font-size: 12px; 
-    text-align: center; 
-}
-.colonnes{
-    display: flex;
-    margin-left: 7%;
-}
-.footer-col h4{
-	font-size: 17px;
-    font-family: "Ubuntu";
-	color: #ffffff;
-	margin-bottom: 15px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-    font-family: "Gabarito";
-	color: #ffffff;
-	text-decoration: none;
-	color: #bbbbbb;
-}
+.img1 {
+    width: 10%;
+    height: 20%;
 
-@media (max-width: 768px){
-    .hamburger{
-        display:block
-    }
-    .menu input, .panier, .menu h1{
-        display: none;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top:70px;
-        gap:0;
-        flex-direction: column;
-        background-color: black;
-        width:100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 25px;
-    }
-    .menu ul li a{
-        margin: 16px 0;
-    }
-    .nav-menu.active{
-        left:0
-    }
+
 }
 
 
 
 
+.img2 {
+    width: 10%;
+    margin-left: 3%;
+    height: 20%;
 
+}
 
-@media (max-width: 768px) {
-    .checklist{
-        float: none;
-        text-align: center;
-    }
-    .CD, .artistes, .certification{
-        width: auto;
-        margin-right: 7%;
-    }
-    .certification{
-        margin-bottom: 25px;
-    }
+.img3 {
+    width: 20%;
+    margin-left: 3%;
+    height: 20%;
+
+}
+
+.img4 {
+    width: 10%;
+    margin-left: 3%;
+    height: 20%;
+
+}
+
+.finPage {
+    margin-top: -15%;
+    height: 10%;
+    background:linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    width: 100%;
+    padding:10px;
 }
 
 
 
+.fin {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px; 
+    padding-bottom: 5%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+      
+} 
 
-@media(max-width: 768px){
-    .row{
-        display: block;
-    }
-    .footer-col{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .formulaire{
-        justify-content: center;
-    }
-    .colonnes{
-        justify-content: center;
-    }
-}
