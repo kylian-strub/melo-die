@@ -91,7 +91,7 @@ a{
 
 
 .bloc{
-    background-color: rgb(46, 45, 45);
+    background-color: rgb(0, 0, 0);
     height: auto;
     border-bottom: 1px solid white;
     width: 100%;
@@ -238,7 +238,7 @@ a{
     border: 1px solid rgb(0, 0, 0);
     width: 240px;
     margin-top: -5px;
-    height: 160px;
+    height: 130px;
     margin-bottom: 15px;
     border-radius: 0px 0px 10px 10px;
 }
@@ -267,78 +267,66 @@ button:hover{
 
 
 .container{
-	max-width: 1170px;
-	margin:auto;
+	width: 100%;
 }
 .row{
 	display: flex;
-	flex-wrap: wrap;
+    flex: wrap;
 }
 ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	background-color: #000000;
     padding: 50px 0;
 }
+.footer-col{
+    margin-left: 7%;
+}
 .footer-col h1{
-    font-size: 16px;
+    font-size: 25px;
     font-family: "Ubuntu";
+    color: white;
 }
 .footer-col h2{
+    padding-top: 10px;
     font-size: 10px;
     font-family: "Ubuntu";
+    color: white;
+}
+.formulaire{
+    display: flex;
+}
+.formulaire .bloc-mail{
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+}
+.formulaire .connect{
+    margin-top: 10px;
+    width: 70px;
+    height: 35px;
+    border:none;
+    padding: 0 5px 0 5px; 
+    font-size: 12px; 
+    text-align: center; 
+}
+.colonnes{
+    display: flex;
+    margin-left: 7%;
 }
 .footer-col h4{
-	font-size: 18px;
+	font-size: 17px;
+    font-family: "Ubuntu";
 	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
+    font-family: "Gabarito";
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
 	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
 }
 
 @media (max-width: 768px){
@@ -394,7 +382,23 @@ ul{
     .certification{
         margin-bottom: 25px;
     }
-    .Albums{
-        justify-content: none;
+}
+
+
+
+
+@media(max-width: 768px){
+    .row{
+        display: block;
+    }
+    .footer-col{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .formulaire{
+        justify-content: center;
+    }
+    .colonnes{
+        justify-content: center;
     }
 }
