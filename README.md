@@ -1,7 +1,7 @@
 # melo-die
 [Lien du site](https://kylian-strub.github.io/melo-die/)
 
-Création d'un site e-commerce éttentielement sur l'aspect du front.
+Création d'un site e-commerce éttentielement sur l'aspect du Front-end.
 
 ## Page d'accueil 
 
