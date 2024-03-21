@@ -12,16 +12,15 @@
 
 ### CARRARA Tim
 
-- catalogue.html
-- stolen.css
+- boutique_page.html
+- shop.css
 
 ## Panier
 
 ### HURTAULT Vince
 
+- panier.js
 - panier.html
-- navbar.css
-- styles.css
-- remove.js
-- collapsible.js
-- burger.js
+- menu-hamburger.js
+- produit.js
+- panier.css
