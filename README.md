@@ -6,7 +6,7 @@
 ### STRUB Kylian
 
 - index.html
-- style.css
+- index.css
 
 ## Boutique
 
